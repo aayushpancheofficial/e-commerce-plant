@@ -1,129 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>plant verse</title>
+    <!-- CSS Links -->
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- navigation bar -->
-         <nav class="navbar">
-            <div class="logo">
-                <h2>PlantVerse</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href ="index.html"> Home</a></li>
-                    <li><a href ="shop.html">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div>
-            <div class="actions">
-                <input type = "search" placeholder = "search plants">
-                <button>cart</button>
-                <button>login</button>
-            </div>
-         </nav> 
-
-    </header>
-    <main>
-         <div class="shop-header">
-        <h1>our Beautiful palnts</h1>
-        <p>choose from our wide collection of plants.</p>
-    </div>
-    <div class="product-grid">
-        
-        <div class="product-card">
-            <img src="#" alt ="Aloe vera plant">
-            <h3>Aloe Vera plant</h3>
-            <p>₹250</p>
-            <button>Add to cart </button>
+    <!-- navigation bar -->
+     <header id="header">
+        <div class ="container nav-container">
+            <!-- logo -->
+             <a href ="index.html"class="logo">
+                <i class="fas fa-leaf"></i>Plantverse
+             </a>
+             <!-- nivigation manu -->
+              <ul class ="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">Blog</a></li>
+                <li><a href="contact.html">Connect</a></li>
+              </ul>
+              <!-- Right icon -->
+               <div class="nav-icon">
+                <div id="search-icon"><i class="fas fa-search"></i></div>
+                <div id="user-icon"><i class="fas fa-user"></i></div>
+                <a href="wishlist.html" id="heart-icon">
+                    <i class="far fa-heart"></i>
+                    <span class="badge" id="wishlist-count">0</span>
+                </a>
+                <div id="cart-iccn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge" id="cart-count">0</span>
+                </div>
+                <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+               </div>
         </div>
-        
-        <div class="product-card">
-            <img src="#" alt ="snake plant plant">
-            <h3>snake plant plant</h3>
-            <p>₹300</p>
-            <button>Add to cart </button>
+     </header>
+     <!-- search overlayer --> 
+   <div class="modal-overlay" id="search-model">
+    <div class="modal-content">
+        <i class="fas fa-times close-modal" id="close-search"></i>
+        <h2>Search Products</h2>
+        <input type="text" id="search-input" placehoder="Search for plants...">
+        <div id="search-result"></div>
+    </div>
+   </div>
+   <div class="shop=page-header">
+    <div class="container">
+        <p>Discover our handpicked collection of fresh,vibrant plants for every sapce.</p>
+    </div>
+   </div>
+   <!-- shop main conteent -->
+    <div class="'shop-container">
+        <div class="container">
+            <!-- side-filter -->
+             <aside class="shop-sidebar">
+                <div class="filter-section">
+                    <h3><i class="fas fa-tags"></i> Categories</h3>
+                    <ul class="filter-list" id="category-filters">
+                        <li>
+                            <label>
+                            <input type="checkbox" value="Indoor">
+                            Indoor Plant <span class="count">(12)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Outdoor">
+                                Outdoor plants <span class="count">(8)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Succulents"> 
+                                Succulents <span class="count">(6)</span>
+                            </label>     
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Air Purifying"> 
+                                Air Purifying <span class="count">(10)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Flowering"> 
+                                Flowering Plants <span class="count">(5)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Bonsai"> 
+                                Bonsai <span class="count">(4)</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Price Filter -->
+                
+                 <!-- Rating Filter -->
+                  <!-- quick stats -->
+                   <!-- Reset Filter -->
+             </aside>
+             <!-- PRODUCTS SECTION -->
+
         </div>
-        
-        <div class="product-card">
-            <img src="#" alt =" money plant">
-            <h3> money plant</h3>
-            <p>₹150</p>
-            <button>Add to cart</button>
-        </div>
-        
-        <div class="product-card">
-            <img src="#" alt ="Bonsai Tree">
-            <h3>Bonsai Tree</h3>
-            <p>₹500</p>
-            <button>Add to cart </button>
-        </div>
-
     </div>
-
-</main>
-    <!-- Footer Starts -->
-
-<footer class="footer">
-
-    <div class="footer-logo">
-
-        <h2>🌱 PlantVerse</h2>
-
-        <p>Bringing Nature Closer To You.</p>
-
-    </div>
-
-    <div class="footer-links">
-
-        <h3>Quick Links</h3>
-
-        <ul>
-
-            <li><a href="#">Home</a></li>
-
-            <li><a href="#">Shop</a></li>
-
-            <li><a href="#">About</a></li>
-
-            <li><a href="#">Contact</a></li>
-
-        </ul>
-
-    </div>
-
-    <div class="footer-contact">
-
-        <h3>Contact</h3>
-
-        <p>Email : plantverse@gmail.com</p>
-
-        <p>Phone : +91 9876543210</p>
-
-        <p>Location : Indore, India</p>
-
-    </div>
-
-    <div class="footer-social">
-
-        <h3>Follow Us</h3>
-
-        <a href="#">Instagram</a>
-
-        <a href="#">LinkedIn</a>
-
-        <a href="#">GitHub</a>
-
-    </div>
-
-</footer>
-
-<!-- Footer Ends -->
+    <!-- Footer -->
+<!-- scripts add -->
 </body>
 </html>
