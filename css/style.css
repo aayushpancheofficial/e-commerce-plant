@@ -1,0 +1,20 @@
+/* GOOGLE FONT FIX*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* CSS RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* BODY STYLING */
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fdf8;
+    color:#333;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
