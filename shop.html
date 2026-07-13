@@ -8,25 +8,28 @@
     <!-- CSS Links -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/shop.css">
 </head>
+
 <body>
     <!-- navigation bar -->
-     <header id="header">
-        <div class ="container nav-container">
+    <header id="header">
+        <div class="container nav-container">
             <!-- logo -->
-             <a href ="index.html"class="logo">
+            <a href="index.html" class="logo">
                 <i class="fas fa-leaf"></i>Plantverse
-             </a>
-             <!-- nivigation manu -->
-              <ul class ="nav-link">
+            </a>
+            <!-- nivigation manu -->
+            <ul class="nav-link">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">Blog</a></li>
                 <li><a href="contact.html">Connect</a></li>
-              </ul>
-              <!-- Right icon -->
-               <div class="nav-icon">
+            </ul>
+            <!-- Right icon -->
+            <div class="nav-icon">
                 <div id="search-icon"><i class="fas fa-search"></i></div>
                 <div id="user-icon"><i class="fas fa-user"></i></div>
                 <a href="wishlist.html" id="heart-icon">
@@ -38,35 +41,35 @@
                     <span class="badge" id="cart-count">0</span>
                 </div>
                 <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
-               </div>
+            </div>
         </div>
-     </header>
-     <!-- search overlayer --> 
-   <div class="modal-overlay" id="search-model">
-    <div class="modal-content">
-        <i class="fas fa-times close-modal" id="close-search"></i>
-        <h2>Search Products</h2>
-        <input type="text" id="search-input" placehoder="Search for plants...">
-        <div id="search-result"></div>
+    </header>
+    <!-- search overlayer -->
+    <div class="modal-overlay" id="search-model">
+        <div class="modal-content">
+            <i class="fas fa-times close-modal" id="close-search"></i>
+            <h2>Search Products</h2>
+            <input type="text" id="search-input" placehoder="Search for plants...">
+            <div id="search-result"></div>
+        </div>
     </div>
-   </div>
-   <div class="shop=page-header">
-    <div class="container">
-        <p>Discover our handpicked collection of fresh,vibrant plants for every sapce.</p>
+    <div class="shop-page-header">
+        <div class="container">
+            <p>Discover our handpicked collection of fresh,vibrant plants for every sapce.</p>
+        </div>
     </div>
-   </div>
-   <!-- shop main conteent -->
-    <div class="'shop-container">
+    <!-- shop main conteent -->
+    <div class="shop-container">
         <div class="container">
             <!-- side-filter -->
-             <aside class="shop-sidebar">
+            <aside class="shop-sidebar">
                 <div class="filter-section">
                     <h3><i class="fas fa-tags"></i> Categories</h3>
                     <ul class="filter-list" id="category-filters">
                         <li>
                             <label>
-                            <input type="checkbox" value="Indoor">
-                            Indoor Plant <span class="count">(12)</span>
+                                <input type="checkbox" value="Indoor">
+                                Indoor Plant <span class="count">(12)</span>
                             </label>
                         </li>
                         <li>
@@ -77,25 +80,25 @@
                         </li>
                         <li>
                             <label>
-                                <input type="checkbox" value="Succulents"> 
+                                <input type="checkbox" value="Succulents">
                                 Succulents <span class="count">(6)</span>
-                            </label>     
+                            </label>
                         </li>
                         <li>
                             <label>
-                                <input type="checkbox" value="Air Purifying"> 
+                                <input type="checkbox" value="Air Purifying">
                                 Air Purifying <span class="count">(10)</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="checkbox" value="Flowering"> 
+                                <input type="checkbox" value="Flowering">
                                 Flowering Plants <span class="count">(5)</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input type="checkbox" value="Bonsai"> 
+                                <input type="checkbox" value="Bonsai">
                                 Bonsai <span class="count">(4)</span>
                             </label>
                         </li>
@@ -110,23 +113,23 @@
                             <input type="range" id="price-slider" class="price-slider" min="0" max="2000" value="2000">
                             <span class="price-max">₹2000+</span>
                         </div>
-                        <div class ="price-value">
+                        <div class="price-value">
                             <span>Min: ₹<span id="min-price">0</span></span>
                             <span>Max: ₹<span id="max-price">2000</span></span>
                         </div>
                     </div>
                 </div>
-                 <!-- Rating Filter -->
-                  <div class="filter-section">
+                <!-- Rating Filter -->
+                <div class="filter-section">
                     <h3><i class="fas fa-star"></i> Rating</h3>
                     <ul class="filter-list">
-                      <li><label><input type="checkbox" value="5"> ★★★★★ (5.0)</label></li>
+                        <li><label><input type="checkbox" value="5"> ★★★★★ (5.0)</label></li>
                         <li><label><input type="checkbox" value="4"> ★★★★☆ (4.0+)</label></li>
                         <li><label><input type="checkbox" value="3"> ★★★☆☆ (3.0+)</label></li>
-  
+
                     </ul>
-                  </div>
-                  <!-- quick stats -->
+                </div>
+                <!-- quick stats -->
                 <div class="filter-section stats-section">
                     <h3><i class="fas fa-chart-line"></i> Quick Stats</h3>
                     <div class="stats">
@@ -136,13 +139,13 @@
                         <p><i class="fas fa-clock"></i> Same Day Dispatch</p>
                     </div>
                 </div>
-                   <!-- Reset Filter -->
-                    <button class="btn-reset-filters" id="reset-filters">
+                <!-- Reset Filter -->
+                <button class="btn-reset-filters" id="reset-filters">
                     <i class="fas fa-undo"></i> Reset All Filters
                 </button>
-             </aside>
-             <!-- PRODUCTS SECTION -->
-              <main class="shop-main">
+            </aside>
+            <!-- PRODUCTS SECTION -->
+            <main class="shop-main">
                 <div class="action-filter" id="action-filter">
                 </div>
                 <div class="shop-toolbar">
@@ -151,45 +154,46 @@
                     </div>
                     <div class="sort-option">
                         <label for="sort-section"><i class="fas fa-sort"></i>Sort by</label>
-                        <section ide="sort-select" class="sort-select">
+                        <select ide="sort-select" class="sort-select">
                             <option value="default">Default Sorting</option>
                             <option value="popularity">POpularity</option>
-                            <optpion value="price-low">Price: Low to Hight</optpion>
+                            <option value="price-low">Price: Low to Hight</optpion>
                             <option value="price-hight">Price: Hight to Low</option>
                             <option value="rating"> highest Rated </option>
-                        </section>
+                        </select>
                     </div>
                 </div>
             </main>
-     <!-- PRODUCTS GRID  -->
-<div class="product-grid" id="shop-products">
-    <!-- Products JavaScript se load honge -->
-    <!-- PRODUCT CARD -->
-    <div class="product-card">
-        <span class="badge best-seller">Best Seller</span>
-        <div class="product-image">
-            <img src="images/plant.jpg" alt="Plant Name">
-            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-        </div>
-        <div class="product-info">
-            <h3><a href="product-detail.html">Plant Name</a></h3>
-            <div class="product-rating">
-                <span class="stars">★★★★★</span>
-                <span class="count">(4.8)</span>
+            <!-- PRODUCTS GRID  -->
+            <div class="product-grid" id="shop-products">
+                <!-- Products JavaScript se load honge -->
+                <!-- PRODUCT CARD -->
+                <div class="product-card">
+                    <span class="badge best-seller">Best Seller</span>
+                    <div class="product-image">
+                        <img src="images/plant.jpg" alt="Plant Name">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-detail.html">Plant Name</a></h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹649</span>
+                            <span class="original-price">₹899</span>
+                            <span class="discount">-28%</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="product-price">
-                <span class="current-price">₹649</span>
-                <span class="original-price">₹899</span>
-                <span class="discount">-28%</span>
-            </div>
-            <button class="add-to-cart">
-                <i class="fas fa-cart-plus"></i> Add to Cart
-            </button>
-        </div>
-    </div>
-</div>
-    <!-- Footer -->
-<!-- scripts add -->
+            <!-- Footer -->
+            <!-- scripts add -->
 </body>
+
 </html>
