@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>plant verse</title>
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Shop | PlantVerse</title>
+
+    <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+     <link rel="stylesheet" href="css/shop.css">
 </head>
 
 <body>
-    <!-- Navigation bar (same as index.html) -->
+
+    <!-- ===================== NAVBAR ===================== -->
     <header>
         <nav class="navbar">
 
             <div class="logo">
-                <h2><i class="fas fa-leaf"></i>PlantVerse</h2>
+                <h2><i class="fas fa-leaf"></i> PlantVerse</h2>
             </div>
 
             <div class="menu">
@@ -35,42 +37,41 @@
                 <input type="search" placeholder="Search plants">
                 <button>Cart</button>
                 <button>Login</button>
+                <button>Wishlist</button>
             </div>
 
         </nav>
     </header>
-    <!-- search overlayer -->
-    <div class="modal-overlay" id="search-model">
-        <div class="modal-content">
-            <i class="fas fa-times close-modal" id="close-search"></i>
-            <h2>Search Products</h2>
-            <input type="text" id="search-input" placehoder="Search for plants...">
-            <div id="search-result"></div>
-        </div>
-    </div>
+
+    <!-- ===================== SHOP PAGE HEADER ===================== -->
     <div class="shop-page-header">
         <div class="container">
-            <p>Discover our handpicked collection of fresh,vibrant plants for every sapce.</p>
+            <h1>🌿 Our Plant Collection</h1>
+            <p>Discover our handpicked collection of fresh, vibrant plants for every space.</p>
         </div>
     </div>
-    <!-- shop main conteent -->
+
+    <!-- ===================== SHOP MAIN CONTENT ===================== -->
     <div class="shop-container">
         <div class="container">
-            <!-- side-filter -->
+
+            <!-- ===== SIDEBAR (Filters) ===== -->
             <aside class="shop-sidebar">
+
+                <!-- Category Filter -->
                 <div class="filter-section">
                     <h3><i class="fas fa-tags"></i> Categories</h3>
                     <ul class="filter-list" id="category-filters">
                         <li>
                             <label>
                                 <input type="checkbox" value="Indoor">
-                                Indoor Plant <span class="count">(12)</span>
+                                Indoor Plants <span class="count">(12)</span>
                             </label>
                         </li>
                         <li>
                             <label>
                                 <input type="checkbox" value="Outdoor">
-                                Outdoor plants <span class="count">(8)</span>
+                                Outdoor Plants <span class="count">(8)</span>
                             </label>
                         </li>
                         <li>
@@ -99,12 +100,13 @@
                         </li>
                     </ul>
                 </div>
+
                 <!-- Price Filter -->
                 <div class="filter-section">
-                    <h3><i class="fas fa-slider-h"></i>Price Range </h3>
-                    <div calss="price-filter">
+                    <h3><i class="fas fa-rupee-sign"></i> Price Range</h3>
+                    <div class="price-filter">
                         <div class="price-range-display">
-                            <span calss="price-min">₹0</span>
+                            <span class="price-min">₹0</span>
                             <input type="range" id="price-slider" class="price-slider" min="0" max="2000" value="2000">
                             <span class="price-max">₹2000+</span>
                         </div>
@@ -114,17 +116,18 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Rating Filter -->
                 <div class="filter-section">
                     <h3><i class="fas fa-star"></i> Rating</h3>
-                    <ul class="filter-list">
+                    <ul class="filter-list" id="rating-filters">
                         <li><label><input type="checkbox" value="5"> ★★★★★ (5.0)</label></li>
                         <li><label><input type="checkbox" value="4"> ★★★★☆ (4.0+)</label></li>
                         <li><label><input type="checkbox" value="3"> ★★★☆☆ (3.0+)</label></li>
-
                     </ul>
                 </div>
-                <!-- quick stats -->
+
+                <!-- Quick Stats -->
                 <div class="filter-section stats-section">
                     <h3><i class="fas fa-chart-line"></i> Quick Stats</h3>
                     <div class="stats">
@@ -134,61 +137,241 @@
                         <p><i class="fas fa-clock"></i> Same Day Dispatch</p>
                     </div>
                 </div>
-                <!-- Reset Filter -->
+
+                <!-- Reset Button -->
                 <button class="btn-reset-filters" id="reset-filters">
                     <i class="fas fa-undo"></i> Reset All Filters
                 </button>
+
             </aside>
-            <!-- PRODUCTS SECTION -->
+
+            <!-- ===== MAIN PRODUCT AREA ===== -->
             <main class="shop-main">
-                <div class="action-filter" id="action-filter">
-                </div>
+
+                <!-- Active Filter Tags -->
+                <div class="action-filter" id="action-filter"></div>
+
+                <!-- Toolbar -->
                 <div class="shop-toolbar">
                     <div class="result-count" id="result-count">
-                        <i class="fas fa-list-ul"></i>Showing <strong>1-8</strong> of <strong>24</strong> Results
+                        <i class="fas fa-list-ul"></i>
+                        Showing <strong>6</strong> Results
                     </div>
                     <div class="sort-option">
-                        <label for="sort-section"><i class="fas fa-sort"></i>Sort by</label>
-                        <select ide="sort-select" class="sort-select">
+                        <label for="sort-select"><i class="fas fa-sort"></i> Sort by</label>
+                        <select id="sort-select" class="sort-select">
                             <option value="default">Default Sorting</option>
-                            <option value="popularity">POpularity</option>
-                            <option value="price-low">Price: Low to Hight</optpion>
-                            <option value="price-hight">Price: Hight to Low</option>
-                            <option value="rating"> highest Rated </option>
+                            <option value="popularity">Popularity</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
                         </select>
                     </div>
                 </div>
-            </main>
-            <!-- PRODUCTS GRID  -->
-            <div class="product-grid" id="shop-products">
-                <!-- Products JavaScript se load honge -->
-                <!-- PRODUCT CARD -->
-                <div class="product-card">
-                    <span class="badge best-seller">Best Seller</span>
-                    <div class="product-image">
-                        <img src="images/plant.jpg" alt="Plant Name">
-                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-                        <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
-                    </div>
-                    <div class="product-info">
-                        <h3><a href="product-detail.html">Plant Name</a></h3>
-                        <div class="product-rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="count">(4.8)</span>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="shop-products">
+
+                    <!-- Card 1 - Indoor -->
+                    <div class="product-card">
+                        <span class="badge">Best Seller</span>
+                        <div class="product-image">
+                            <img src="images/plant image/Monstera Deliciosa.jpg" alt="Monstera">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
                         </div>
-                        <div class="product-price">
-                            <span class="current-price">₹649</span>
-                            <span class="original-price">₹899</span>
-                            <span class="discount">-28%</span>
+                        <div class="product-info">
+                            <p class="product-category">Indoor</p>
+                            <h3><a href="product-detail.html">Monstera Deliciosa</a></h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(4.8 · 312)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹649</span>
+                                <span class="original-price">₹899</span>
+                                <span class="discount">-28%</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
                         </div>
-                        <button class="add-to-cart">
-                            <i class="fas fa-cart-plus"></i> Add to Cart
-                        </button>
                     </div>
+
+                    <!-- Card 2 - Outdoor -->
+                    <div class="product-card">
+                        <span class="badge">New</span>
+                        <div class="product-image">
+                            <img src="images/plant image/Lavender.jpg" alt="Lavender">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">Outdoor</p>
+                            <h3><a href="product-detail.html">Lavender</a></h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(4.9 · 520)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹279</span>
+                                <span class="original-price">₹379</span>
+                                <span class="discount">-26%</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Succulents -->
+                    <div class="product-card">
+                        <span class="badge">Sale</span>
+                        <div class="product-image">
+                            <img src="images/plant image/Jade Succulent.jpg" alt="Jade Succulent">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">Succulents</p>
+                            <h3><a href="product-detail.html">Jade Succulent</a></h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="count">(4.6 · 423)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹199</span>
+                                <span class="original-price">₹299</span>
+                                <span class="discount">-33%</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 - Air Purifying -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/plant image/Snake Plant.jpg" alt="Snake Plant">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">Air Purifying</p>
+                            <h3><a href="product-detail.html">Snake Plant</a></h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(4.9 · 540)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹349</span>
+                                <span class="original-price">₹499</span>
+                                <span class="discount">-30%</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 - Flowering -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/plant image/Hibiscus.jpg" alt="Hibiscus">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">Flowering</p>
+                            <h3><a href="product-detail.html">Hibiscus</a></h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="count">(4.6 · 156)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹549</span>
+                                <span class="original-price">₹749</span>
+                                <span class="discount">-27%</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 - Bonsai -->
+                    <div class="product-card">
+                        <span class="badge">Premium</span>
+                        <div class="product-image">
+                            <img src="images/plant image/Ficus Bonsai.jpg" alt="Ficus Bonsai">
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">Bonsai</p>
+                            <h3><a href="product-detail.html">Ficus Bonsai</a></h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(4.9 · 98)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹1,299</span>
+                                <span class="original-price">₹1,799</span>
+                                <span class="discount">-28%</span>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-            <!-- Footer -->
-            <!-- scripts add -->
+
+            </main>
+
+        </div>
+    </div>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <h2>🌱 PlantVerse</h2>
+            <p>Bringing Nature Closer To You.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: arstartup42@gmail.com</p>
+            <p>Phone: +91 7987022760</p>
+            <p>Location: Indore, India</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+
+    </footer>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
