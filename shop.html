@@ -14,35 +14,30 @@
 </head>
 
 <body>
-    <!-- navigation bar -->
-    <header id="header">
-        <div class="container nav-container">
-            <!-- logo -->
-            <a href="index.html" class="logo">
-                <i class="fas fa-leaf"></i>Plantverse
-            </a>
-            <!-- nivigation manu -->
-            <ul class="nav-link">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">Blog</a></li>
-                <li><a href="contact.html">Connect</a></li>
-            </ul>
-            <!-- Right icon -->
-            <div class="nav-icon">
-                <div id="search-icon"><i class="fas fa-search"></i></div>
-                <div id="user-icon"><i class="fas fa-user"></i></div>
-                <a href="wishlist.html" id="heart-icon">
-                    <i class="far fa-heart"></i>
-                    <span class="badge" id="wishlist-count">0</span>
-                </a>
-                <div id="cart-iccn">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="badge" id="cart-count">0</span>
-                </div>
-                <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+    <!-- Navigation bar (same as index.html) -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2><i class="fas fa-leaf"></i>PlantVerse</h2>
             </div>
-        </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="actions">
+                <input type="search" placeholder="Search plants">
+                <button>Cart</button>
+                <button>Login</button>
+            </div>
+
+        </nav>
     </header>
     <!-- search overlayer -->
     <div class="modal-overlay" id="search-model">
