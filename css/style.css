@@ -1,27 +1,24 @@
-/* GOOGLE FONT FIX*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-/* CSS RESET 
-______________*/
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-/* BODY STYLING 
-_______________*/
+
 body{
     font-family:'Poppins',sans-serif;
     background:#f8fdf8;
     color:#333;
 }
-/* NAVBAR STYLING 
-_____________________-*/
+
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 80px;
+    padding:15px 40px;
     background:#ffffff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 .logo h2{
@@ -131,9 +128,7 @@ _____________________-*/
 }
 
 
-/*_____________________________
-    FEATURED PRODUCTS
-______________________________ */
+/* FEATURED PRODUCTS */
 
 .featured-products{
     padding:80px;
@@ -197,9 +192,7 @@ ______________________________ */
     background:#1b5e20;
 }
 
-/*____________________________
-    categories section
-______________________________*/
+/*  categories section */
 .categories{
     padding:80px;
      background:#e9b61c;
@@ -243,9 +236,7 @@ ______________________________*/
     font-size:22px;
 }
 
-/* ====================================
-        WHY CHOOSE US
-==================================== */
+/* WHY CHOOSE US  */
 
 .why-choose-us{
     padding:80px;
@@ -295,9 +286,7 @@ ______________________________*/
 }
 
 
-/* ===========================
-        TESTIMONIALS
-=========================== */
+/*   TESTIMONIALS   */
 
 .testimonials{
     padding:80px;
@@ -346,9 +335,7 @@ ______________________________*/
     margin-top:15px;
 }
 
-/*_____________________________
-        NEWSLETTER
-______________________________*/
+/* NEWSLETTER SECTION */
 
 .newsletter{
     padding:80px;
@@ -398,10 +385,7 @@ ______________________________*/
     background:#e8f5e9;
 }
 
-/* ===========================
-            FOOTER
-=========================== */
-
+/*  FOOTER SECTION */
 footer{
     display:flex;
     justify-content:space-between;
