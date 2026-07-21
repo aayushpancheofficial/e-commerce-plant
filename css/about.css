@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #2d6a4f;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.actions input {
+    padding: 8px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+}
+
+.actions button {
+    padding: 8px 14px;
+    background: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.actions button:hover {
+    background: #1b4332;
+}
+
+
+/* =========================
+        ABOUT HERO
+========================= */
+
+.about-hero{
+    height: 80vh;
+    background-image: url("../images/hero/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    /* Uncomment if text is not readable */
+
+    /* background: rgba(0,0,0,0.25); */
+}
+
+.about-content{
+    width: 50%;
+    padding-left: 80px;
+}
+
+.about-content h1{
+    font-size: 60px;
+    color: #1b5e20;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-content p{
+    max-width: 500px;
+    font-size: 20px;
+    color: #2f4f2f;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.hero-btn{
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    background: #2e7d32;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover{
+    background: #1b5e20;
+    transform: translateY(-4px);
+}
+
+.our-story{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    padding:100px 80px;
+}
+
+.story-image{
+    flex:1;
+}
+
+.story-content{
+    flex:1;
+}
+
+.story-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.story-content h2{
+    font-size:42px;
+    color:#1b5e20;
+    margin-bottom:20px;
+}
+
+.story-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.story-content ul{
+    list-style:none;
+}
+
+.story-content li{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+/*==========================
+        MISSION
+==========================*/
+
+.mission{
+    padding:100px 80px;
+    background:#f5f8f2;
+}
+
+.mission-content{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.mission h2{
+    font-size:42px;
+    color:#1b5e20;
+    margin-bottom:15px;
+}
+
+.mission h3{
+    font-size:28px;
+    color:#2e7d32;
+    margin-bottom:25px;
+}
+
+.mission p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* =========================
+        TEAM SECTION
+========================= */
+
+.team{
+    padding:100px 80px;
+}
+
+.team > h2{
+    text-align:center;
+    font-size:42px;
+    color:#1b5e20;
+    margin-bottom:50px;
+}
+
+.team-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+.team-card{
+    padding:30px;
+    text-align:center;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s ease;
+}
+
+.team-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.18);
+}
+
+.team-card img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.team-card h3{
+    margin:20px 0 8px;
+    font-size:22px;
+    color:#1b5e20;
+}
+
+.team-card p{
+    color:#666;
+}
+
+/* =========================
+      ACHIEVEMENTS
+========================= */
+
+.achievements{
+    padding:80px;
+    background:#e8f5e9;
+}
+
+.achievement-container{
+    display:flex;
+    gap:30px;
+}
+
+.achievement-card{
+    flex:1;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.achievement-card h2{
+    font-size:48px;
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.achievement-card p{
+    font-size:18px;
+    color:#555;
+}
+
+/* =========================
+      CALL TO ACTION
+========================= */
+
+.about-cta{
+    padding:80px;
+    text-align:center;
+    background:#f5f8f2;
+}
+
+.about-cta h2{
+    font-size:40px;
+    color:#1b5e20;
+    margin-bottom:15px;
+}
+
+.about-cta p{
+    max-width:600px;
+    margin:0 auto 30px;
+    font-size:18px;
+    line-height:1.7;
+    color:#555;
+}
+
+.cta-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#2e7d32;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    transition:0.3s ease;
+}
+
+.cta-btn:hover{
+    background:#1b5e20;
+    transform:translateY(-3px);
+}
+
+footer{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    padding:60px 80px;
+    background:#1b4332;
+    color:white;
+}
+
+.footer-logo,
+.footer-links,
+.footer-contact,
+.footer-social{
+    flex:1;
+}
+
+footer h3{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.footer-logo h2{
+    margin-bottom:15px;
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links ul li{
+    margin-bottom:10px;
+}
+
+.footer-links a,
+.footer-social a{
+    text-decoration:none;
+    color:white;
+    display:block;
+    margin-bottom:10px;
+    transition:color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+    color:#c8e6c9;
+}
+
+.footer-contact p{
+    margin-bottom:10px;
+    line-height:1.6;
+}

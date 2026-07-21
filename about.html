@@ -4,65 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about us</title>
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
+
+        <!-- == NAVBAR == -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2><i class="fas fa-leaf"></i> PlantVerse</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="actions">
+                <input type="search" placeholder="Search plants">
+                <button>Cart</button>
+                <button>Login</button>
+                <button>Wishlist</button>
+            </div>
+
+        </nav>
+    </header>
+
     <main>
 
-    <!-- About Hero -->
+    <!-- 1. ABOUT HERO SECTION -->
 
     <section class="about-hero">
 
-        <div class="about-content">
+        <div class="overlay">
 
-            <h1>About PlantVerse</h1>
+            <div class="about-content">
 
-            <p>
-                Bringing nature closer to every home with healthy,
-                affordable and beautiful plants.
-            </p>
+                <h1>About PlantVerse</h1>
+
+                <p>
+                    Bringing nature closer to every home with healthy,
+                    affordable and beautiful plants.
+                </p>
+
+                <a href="shop.html" class="hero-btn">Shop Now</a>
+
+            </div>
 
         </div>
 
     </section>
 
-    <!-- Our Story -->
+
+    <!-- 2. OUR STORY SECTION -->
 
     <section class="our-story">
 
         <div class="story-image">
 
-            <img src="images/about-story.jpg" alt="Our Story">
+            <img
+                src="images/featured/1"
+                alt="Plants representing the PlantVerse story"
+            >
 
         </div>
 
         <div class="story-content">
 
             <h2>Our Story</h2>
+            <p>
+                PlantVerse was founded with a vision to bring the beauty and
+                benefits of nature into every home. Our journey began with a
+                passion for plants and a desire to make them accessible to
+                everyone. We believe that plants not only enhance the aesthetic
+                appeal of living spaces but also contribute to a healthier and
+                more sustainable lifestyle. Our team is dedicated to curating a
+                diverse collection of premium-quality plants, ensuring that each
+                plant we offer is nurtured with care and attention. From indoor
+                greenery to outdoor landscapes, we strive to provide our
+                customers with the perfect plant companions that bring joy,
+                tranquility, and a touch of nature into their lives.
+            </p>
+            <ul>
+                <li>Premium Quality Plants</li>
+                <li>Eco-Friendly Packaging</li>
+                <li>Fast & Safe Delivery</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!--3. OUR MISSION SECTION -->
+
+    <section class="mission">
+
+        <div class="mission-content">
+
+            <h2>Our Mission</h2>
+
+            <h3>Bringing Nature To Every Home</h3>
 
             <p>
-                PlantVerse was created with one simple vision:
-                to make every home greener by providing healthy,
-                beautiful and affordable plants.
+                Our mission is to make the beauty and benefits of plants
+                accessible to everyone. We are committed to providing
+                high-quality plants that enhance living spaces, promote
+                well-being, and contribute to a greener and more sustainable
+                world. Through our dedication to excellence, customer
+                satisfaction, and environmental responsibility, we aim to
+                inspire a love for nature and create a positive impact on the
+                communities we serve.
             </p>
 
         </div>
 
     </section>
 
-    <!-- Mission -->
 
-    <section class="mission">
-
-        <h2>Our Mission</h2>
-
-        <p>
-            Our mission is to inspire people to live closer
-            to nature and create healthier homes.
-        </p>
-
-    </section>
-
-    <!-- Team -->
+    <!-- 4. OUR TEAM SECTION -->
 
     <section class="team">
 
@@ -72,11 +137,42 @@
 
             <div class="team-card">
 
-                <img src="images/founder.jpg" alt="Founder">
+                <img
+                    src="images/icon/1.png"
+                    alt="PlantVerse team member"
+                >
 
-                <h3>Founder</h3>
+                <h3>Team Member</h3>
 
-                <p>Plant Lover & Web Developer</p>
+                <p>Founder</p>
+
+            </div>
+
+
+            <div class="team-card">
+
+                <img
+                    src="images/icon/1.png"
+                    alt="PlantVerse team member"
+                >
+
+                <h3>Team Member</h3>
+
+                <p>Plant Expert</p>
+
+            </div>
+
+
+            <div class="team-card">
+
+                <img
+                    src="images/icon/1.png"
+                    alt="PlantVerse team member"
+                >
+
+                <h3>Team Member</h3>
+
+                <p>Customer Support</p>
 
             </div>
 
@@ -84,7 +180,8 @@
 
     </section>
 
-    <!-- Achievements -->
+
+    <!--5. ACHIEVEMENTS SECTION -->
 
     <section class="achievements">
 
@@ -98,6 +195,7 @@
 
             </div>
 
+
             <div class="achievement-card">
 
                 <h2>100+</h2>
@@ -105,6 +203,7 @@
                 <p>Plant Species</p>
 
             </div>
+
 
             <div class="achievement-card">
 
@@ -118,17 +217,58 @@
 
     </section>
 
-    <!-- Call To Action -->
+
+    <!--6. CALL TO ACTION SECTION-->
 
     <section class="about-cta">
 
         <h2>Ready To Start Your Green Journey?</h2>
 
-        <button>Shop Now</button>
+        <p>
+            Discover beautiful plants and bring a touch
+            of nature into your space.
+        </p>
+
+        <a href="shop.html" class="cta-btn">
+            Shop Now
+        </a>
 
     </section>
 
 </main>
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <h2>🌱 PlantVerse</h2>
+            <p>Bringing Nature Closer To You.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email : arstartup42@gmail.com</p>
+            <p>Phone : +91 798702276#</p>
+            <p>Location : Indore, India</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+
+    </footer>
     
 </body>
 </html>
