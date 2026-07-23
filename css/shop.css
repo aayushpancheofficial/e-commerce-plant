@@ -418,7 +418,9 @@ transition-delay: 0.05s; }
     }
  @media(max-width: 500px) {
     .product-grid{ grid-template-columns: 1fr; }
- }   
+ }  
+ 
+ 
 /*  FOOTER SECTION */
 footer{
     display:flex;
